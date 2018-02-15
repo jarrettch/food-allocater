@@ -1,11 +1,11 @@
 {
-  "name": "chewse",
+  "name": "food-allocator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple food allocator",
   "main": "ratios.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Jarrett Harris",
   "license": "ISC"
 }
