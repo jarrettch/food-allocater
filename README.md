@@ -1,2 +1,2 @@
-# food-allocater
+# food-allocator
 Simple Food Allocator
