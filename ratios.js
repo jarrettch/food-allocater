@@ -25,9 +25,7 @@
 
 function ratios(f, p) {
   let meal = {};
-  if (p === 0) {
-   return meal = {'1': 0}
-  }
+  if (p === 0) return meal = {'1': 0}
   while (p > 0) {
     for (let key in f) {
       if (p > 0) {
@@ -41,7 +39,7 @@ function ratios(f, p) {
       }
     }
   }
-  console.log(meal)
+  // console.log(meal)
   return meal
 }
 
