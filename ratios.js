@@ -23,41 +23,26 @@
 // f({1: 1}, 0) —> {1: 0}
 // f({1: 1, 2:1, 3:1},  11) —> {1: 4, 2: 4, 3: 3}
 
-// const foods = {1: 1, 2: 1, 3: 1}
-const foods = {1:1, 2:2, 3:1}
-// const foods = {1: 1}
-
-const portions = 11
-
-// meal {1: 4, 2: 4, 3: 3}
-
 function ratios(f, p) {
   let meal = {};
-  if (p === 0) return {'1': 0}
+  if (p === 0) {
+   return meal = {'1': 0}
+  }
   while (p > 0) {
     for (let key in f) {
       if (p > 0) {
         if (!meal[key]) {
           meal[key] = 0
         }
-
-        if (f[key] > p){
-          console.log('he')
-          // return {'1': 0}
-          // break
-        } else {
+        if (f[key] <= p){
           meal[key] += f[key]
         }
         p -= f[key]
-        // console.log(f[key])
       }
     }
   }
-  // console.log(f)
   console.log(meal)
   return meal
 }
 
-ratios(foods, portions)
-
-// module.exports = ratios;
+module.exports = ratios;
